@@ -1,2 +1,3 @@
 # java-
-goals --> learn poo and basic sql commands so i can start working with springboot in web applications
+abstraction --> abstract classes cannot be instanciated,
+but they can have subclasses  that can be
