@@ -2,10 +2,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car car1 = new Car();
+        Carro carro = new Carro();
+        Bicicleta bike = new Bicicleta();
 
-        System.out.println(car1.name);
-        car1.start();
+        bike.parar();
+        carro.ir();
+
+        System.out.println(bike.velocidade);
+        System.out.println(carro.velocidade);
+
+        System.out.println(carro.wheels);
+        System.out.println(bike.pedals);
     }
 
 }
