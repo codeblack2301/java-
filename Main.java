@@ -1,20 +1,17 @@
 public class Main {
 
     public static void main(String[] args) {
-        // Shape shape = new Shape();
 
-        Circle circle = new Circle(5.00);
-        Triangle triangle = new Triangle(23, 24);
-        Rectangle rectangle = new Rectangle(23, 24);
+        Folha folha1 = new Folha("naruto", "s");
+        Folha folha2 = new Folha("sasuke", "s");
 
-        circle.display();
-        triangle.display();
-        rectangle.display();
+        Shinobi folha[] = { folha1, folha2 };
 
-        double value = circle.area();
+        // String[] folha = new String[3];
 
-        System.out.println(value);
+        for (Shinobi x : folha) {
+            System.out.println(x.jutsu());
+        }
 
     }
-
 }
