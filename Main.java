@@ -2,10 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car car = new Car("cahrger", "yellow", 20000);
+        Carro carro = new Carro();
+        Bicicleta bike = new Bicicleta();
+        Boat boat = new Boat();
 
-        car.setColor("blue");
-        System.out.println(car.getColor());
+        Veiculo[] racers = { carro, bike, boat };
+
+        for (Veiculo x : racers) {
+            x.go();
+        }
 
     }
 
