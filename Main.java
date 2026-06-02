@@ -2,10 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car car1 = new Car();
+        Car car = new Car("cahrger", "yellow", 20000);
 
-        System.out.println(car1.name);
-        car1.start();
+        car.setColor("blue");
+        System.out.println(car.getColor());
+
     }
 
 }
