@@ -1,13 +1,20 @@
 public class Main {
 
     public static void main(String[] args) {
+        // Shape shape = new Shape();
 
-        Carro car = new Carro();
-        Bicicleta bike = new Bicicleta();
+        Circle circle = new Circle(5.00);
+        Triangle triangle = new Triangle(23, 24);
+        Rectangle rectangle = new Rectangle(23, 24);
 
-        car.ir();
+        circle.display();
+        triangle.display();
+        rectangle.display();
 
-        bike.ir();
+        double value = circle.area();
+
+        System.out.println(value);
+
     }
 
 }
