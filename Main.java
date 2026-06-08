@@ -2,11 +2,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Uchihas sasuke = new Uchihas();
-        Uzumaki naruto = new Uzumaki();
-
-        sasuke.AtaqueBasico();
-        naruto.AtaqueBasico();
-
+        Pedido pedido = new Pedido(-1, "pedido1", 20);
     }
 }
