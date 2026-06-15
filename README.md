@@ -33,6 +33,9 @@ mas qual a classe do objeto?
 ---------
 THROW --> lançar uma exceçao manualmente
 
-throw --> gera/dispara um erro
+throw --> gera/dispara um erro --> RuntimeException/ IllegalException
 try/catch --> captura um erro e o trata
 
+
+
+start join sleep yield wait

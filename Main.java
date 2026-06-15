@@ -1,21 +1,21 @@
 
-/*acessar um index n existente em um array
-divisao por zero
-acessar um arquivo inesistente
-entrada de dados invalida
+/*uma thread é uma linha de execuçao dentro do programa
+main é uma thread
 */
 public class Main {
-
     public static void main(String[] args) {
 
-        Cliente cliente = new Cliente(1, 200.0, "rafael");
+        for (int i = 0; i < 5; i++) {
+            MinhaThread t = new MinhaThread(i);
+            MinhaThread t2 = new MinhaThread(i);
+            t.start();
 
-        try {
-            cliente.Sacar(201.0);
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+            t2.join();
+
+            System.out.println("thread terminada");
+
         }
-        System.out.println("saldo atual: " + cliente.saldo);
 
     }
+
 }
